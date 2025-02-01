@@ -1,0 +1,57 @@
+@layer background {
+    .background-cover {
+        position: relative;
+    }
+
+    .spinner-image-container {
+        position: relative;
+    }
+
+    .spinner-background-overlay {
+        z-index: -1;
+        background: red;
+        width: 1300px;
+        height: 1224px;
+        position: absolute;
+        top: -50rem;
+        right: -50%;
+        border-radius: 100%;
+        overflow: hidden;
+    }
+    .spinner-image-container {
+        height: 500px;
+    }
+    .food-dish-img {
+        z-index: 111;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: end;
+        height: -webkit-fill-available;
+        top: 25%;
+        left: 14%;
+    }
+    .food-spinner {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: -webkit-fill-available;
+        position: relative;
+        top: 45%;
+    }
+    .food-spinner img {
+        width: 750px;
+        height: 750px;
+        display: block;
+        transform-origin: center;
+    }
+    .food-dish-img img {
+        width: 400px;
+    }
+}
+
+@media screen and (min-width: 1200px) and (max-width: 1400px) {
+    .food-dish-img {
+        left: 0%;
+    }
+}
