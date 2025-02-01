@@ -9,7 +9,7 @@
 
     .spinner-background-overlay {
         z-index: -1;
-        background: red;
+        /* background: red; */
         width: 1300px;
         height: 1224px;
         position: absolute;
@@ -17,6 +17,7 @@
         right: -50%;
         border-radius: 100%;
         overflow: hidden;
+        transition: background-color 1s ease-in-out;
     }
     .spinner-image-container {
         height: 500px;
@@ -30,6 +31,7 @@
         height: -webkit-fill-available;
         top: 25%;
         left: 14%;
+        transition: all 2s ease-in-out;
     }
     .food-spinner {
         display: flex;
@@ -44,6 +46,7 @@
         height: 750px;
         display: block;
         transform-origin: center;
+        transition: transform 2s ease-in-out;
     }
     .food-dish-img img {
         width: 400px;
